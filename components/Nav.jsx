@@ -13,11 +13,11 @@ const Nav = () => {
 
   useEffect(() => {
     const setUpProviders = async () => {
-      const res = await getProviders();
-      setProviders(res);
+      const response = await getProviders();
+      setProviders(response);
     }
-    setUpProviders()
-  },[])
+    setUpProviders();
+  }, [])
 
 
   return (
